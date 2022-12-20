@@ -1,0 +1,47 @@
+nav button{
+    width: 50px;
+    height: 35px;
+}
+#navigationbar{
+    width: 100%;
+    min-width: 329px;
+    /* justify-content: space-around; */
+    padding: 3px 5px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 0px;
+}
+header{
+    background-image: none;
+}
+section{
+    width: 95%;
+    
+    margin-top: 60px;
+}
+#search{
+    width: 100px;
+}
+
+h1{
+    font-size: 40px;
+    padding: 0px;
+    text-align: center;
+}
+
+#divalert{
+    width: 330px;
+    position: fixed;
+    height: 440px;
+    top: 50%;
+    left: 50%;
+    margin-top: -220px;
+    margin-left: -165px;
+}
+
+#btnsalert{
+    padding: 0;
+}
+
+.btnalerterror{
+    left: 110px;
+  }

@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+
+body{
+    margin: 0px;
+    background-image: url("../imgs/bitcoin_bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    /* position: relative; */
+}
+
+header{
+    /* height: 100px; */
+    width: 100%;
+    /* background-color: lightgray; */
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-image: url("../imgs/bitcoin_bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    font-family: 'Black Ops One', cursive;
+    color: rgb(17, 17, 17);
+    text-shadow: rgba(17, 17, 17,1) 0px 1px 2px;
+    font-size: 60px;
+    text-align: center;
+    
+}
+
+header>h1{
+    text-align: left;
+    padding: 2px 0 0 50px;
+}
+
+h1 span{
+    color: rgb(189, 68, 26);
+    font-size: 40px;
+}
+
+section{
+    width: 80%;
+    max-width: 1300px;
+    min-width: 328px;
+    min-height: 1000px;
+    margin: auto;
+    margin-top: 152px;
+    /* border: 1px gray solid; */
+}
+
+#navigationbar{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(17, 17, 17,0.96);
+    border: 1px lightgray solid;
+    padding: 10px 20px;
+    /* margin-bottom: 1px; */
+    border-radius: 10px;
+    box-shadow: #303030 0px 1px 3px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(17,17,17,0.99);
+    color: lightgray;
+    height: 120px;
+    margin-top: 15px;
+}
+
+footer div a{
+    color: lightgray;
+}
+footer div a:hover{
+    text-decoration: none;
+    color: lightgray;
+}
+
+nav button{
+    background-color: rgb(102, 88, 81);
+    border: none;
+    border-bottom: 2px rgb(102, 88, 81) solid;
+    /* background-color: rgb(78, 70, 66); */
+    color: white;
+    
+    /* box-shadow: rgb(17, 17, 17) 0px 1px 2px; */
+    padding-bottom: 2px;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+nav button:hover, nav button:focus{
+    /* background-color: rgb(189, 68, 26); */
+    border-bottom: 2px rgb(189, 68, 26) solid;
+    /* color: lightgray; */
+    cursor: pointer;
+}
+
+
+button:focus{
+    outline: none;
+}
+
+.btn-on{
+    background-color: rgb(189, 68, 26);
+    border-bottom: 2px rgb(189, 68, 26) solid;
+    /* color: lightgray; */
+}
+
+.btn-on:hover, .btn-on:focus{
+    border-bottom: 2px rgb(102, 88, 81) solid;
+}
+
+/* .btn-on:hover{
+    background-color: rgb(28, 82, 126);
+    color: lightgray;
+} */
+
+#formsearch{
+    /* width: 150px; */
+    display: flex;
+}
+
+#search{
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    padding-left:8px;
+    border-radius: 5px 0 0 5px;
+    border: none;/* 1px gray solid; */
+    color: #111111;
+    /* width: 120px; */
+}
+
+#search:focus{
+    outline: none;
+}
+
+#formsearch button{
+    background-color: rgb(102, 88, 81);
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 0 10px;
+}
+
+#formsearch button:hover, #formsearch button:focus{
+    background-color: rgb(189, 68, 26);
+    color: lightgray;
+}
+
+#divHomePage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cardcrypt{
+    width: 300px;
+    height: 170px;
+    color: white;
+    background-color:  rgba(17,17,17,0.96);
+    border-radius: 10px;
+    margin: 5px;
+    /* padding: 10px 15px; */
+    position: relative;
+
+}
+.symbolcrypt{
+    font-size: 30px;
+}
+
+.imgsymname{
+    margin: 10px 0 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.symname{
+    margin: 0 10px;
+}
+.moreinfo{
+    position: absolute;
+    bottom: 0px;
+    height: 35px;
+    width: 100%;
+    /* background-image: url("fond_more.png");
+    background-size: cover; */
+    /* background-color: lightgrey; */
+    background-color: rgb(102, 88, 81);
+    color: white;
+    font-size: 18px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.moreinfo:hover{
+    /* background-color: rgb(167, 139, 139); */
+    background-color: rgb(189, 50, 26);
+    /* color: lightgray; */
+}
+
+.moreinfo:hover .triangle{
+    border-bottom: 8px solid rgb(189, 50, 26);
+}
+
+.lessinfo{
+    height: 85px;
+    /* background-image: url("imgs/fond_more.png"); */
+    background-color: lightgray;
+    /* background-size: cover; */
+    color: #111111;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    padding: 4px 35px 0 40px;
+    font-weight: 500;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 8px solid rgb(102, 88, 81);
+    position: absolute;
+    top: -8px;
+    right: 142px;
+}
+
+
+.trianglebas{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 8px solid rgba(17,17,17,0.96);
+    position: absolute;
+    top: 0px;
+    right: 142px;
+}
+
+.infowp24{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p24p{
+    color: rgb(33, 109, 33);
+    font-size: 25px;
+}
+.p24m{
+    color: rgb(194, 28, 28);
+    font-size: 25px;
+}   
+    
+
+/* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+.imgsymname .switch{
+    right: 15px;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: rgb(13, 125, 216);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(13, 125, 216);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(21px);
+    -ms-transform: translateX(21px);
+    transform: translateX(21px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 28px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+#thealert{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 3;
+}
+
+#divalert{
+      width: 550px;
+      height: 400px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      margin-top: -200px;
+      margin-left: -275px;
+      padding: 20px;
+      background-color: rgba(17, 17, 17, 0.99);
+      border: 1px white solid;
+      color: white;
+}
+#divalert h2{
+      color: lightgray;
+}
+
+.divswi{
+      width: 300px;
+      height: 40px;
+      margin-left: 40px;
+}
+.divswi div{
+      margin-left: 60px;
+      font-size: 18px;
+}
+
+h4{
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+  }
+
+h2{
+      margin-top: 40px;
+      color: black;
+      text-align: center;
+      font-size: 50px;
+}
+
+h6 strong{
+      font-size: 18px;
+      color: rgb(13, 125, 216);
+}
+
+#btnsalert{
+      padding: 0 30px;
+      display: flex;
+      justify-content: space-evenly;
+}
+
+.btnalerterror{
+    position: absolute;
+    left: 190px;
+    bottom: 30px;
+}
+
+#btnsalert button{
+      width: 120px;
+      height: 30px;
+      border: none;
+      border-radius: 5px;
+}
+
+#cancel:hover{
+      background-color: rgb(189, 50, 26);
+      color: rgb(223, 223, 223);
+}
+
+#replace:hover:enabled{
+      background-color: rgb(8, 101, 177);
+      color: rgb(255, 255, 255);
+}
+
+#butters{
+      margin: 20px 0 15px 0 ;
+}
+
+.searchon{
+      background-color: rgba(211, 211, 211, 0.85);
+      color: rgb(17,17,17);
+}
+.searchon .moreinfo{
+    background-color: rgba(17,17,17,0.96);
+    color: lightgray;
+}
+
+.searchon .lessinfo{
+    background-color: rgb(175, 175, 175);
+    color: #111111;
+}
+
+.searchon .trianglebas{
+    border-top: 8px solid lightgray;
+}
+
+.searchon .moreinfo:hover{
+    background-color: rgb(189, 50, 26);
+}
+
+.searchon .triangle{
+    border-bottom: 8px solid rgba(17,17,17,0.96);
+}
+
+.searchon .slider{
+    background-color: #1a1a1a;
+}
+
+#divLiveReportsPage{
+    width: 95%;
+    margin: auto;
+    /* text-align: center; */
+}
+
+
+#chartContainer{
+    border: 1px #1a1a1a solid;
+}
+
+.imgiggg{
+    background-size: cover;
+    /* background-position: 50% 40%; */
+    width: 204px;
+    height: 204px;
+    border-radius :50%;
+    border: 2px #111111 solid;
+    /* margin: auto; */
+}
+.imgiglobal{
+    background-size: cover;
+    /* background-position: 50% 40%; */
+    width: 200px;
+    height: 200px;
+    border-radius :50%;
+    /* border: 2px #111111 solid; */
+}
+
+.imgif{
+    background-size: cover;
+    /* background-position: 50% 40%; */
+    width: 200px;
+    height: 200px;
+    border-radius :50%;
+    /* border: 2px #111111 solid; */
+}
+
+.imgif img {
+    display: none;
+    }
+
+#divAboutPage{
+    background-color: rgba(17, 17, 17,0.94);
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+#divAboutPage h1{
+    color: lightgray;
+    
+}
+
+#imgandauthor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px;
+    align-items: center;
+}
+
+.firstinfoaut, .secondinfoaut{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin: 20px; */
+}
+.infoauthor{
+    display: flex;
+    font-size: 22px;
+    width: 300px;
+    /* height: 40px; */
+    /* padding: 3px 10px; */
+    /* border-radius: 5px; */
+    /* text-align: center; */
+    margin: 10px 20px;
+}
+.winfoauthor{
+    background-color: rgb(2, 69, 114);
+    color: lightgray;
+    width: 80px;
+    border-radius: 5px 0 0 5px;
+    padding: 5px 0;
+    text-align: center;
+}
+.xinfoauthor{
+    color:#111111;
+    background-color: lightgray;
+    width: 220px;
+    padding: 5px 0 5px 10px;
+    border-radius: 0 5px 5px 0;
+}
+#aboutproject{
+    font-size: 22px;
+    color: lightgray;
+    margin: 20px;
+}
+#titleabpr{
+    /* font-size:  */
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+#lgsused{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.langs{
+    background-color: rgb(189, 68, 26);
+    padding: 2px 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#idforbtninabout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btninabout{
+    width: 230px;
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(2, 69, 114);
+    color: lightgray;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
